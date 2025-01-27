@@ -33,9 +33,7 @@ static int log_level = WLR_ERROR;
 
 /* Autostart */
 static const char *const autostart[] = {
-        "wbg", "/home/erik/Nitrogen/howl.jpg", NULL,
-        "waybar", NULL,
-        "fcitx5", "-d", NULL,
+        "/home/erik/.local/share/dwm/autostart.sh", NULL,
         NULL /* terminate */
 };
 
