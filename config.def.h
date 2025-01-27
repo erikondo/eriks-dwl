@@ -34,7 +34,7 @@ static int log_level = WLR_ERROR;
 
 /* Autostart */
 static const char *const autostart[] = {
-        "/home/erik/.local/share/dwl/autostart.sh", NULL,
+        "/home/erik/.local/share/dwl/wallpapers.sh", NULL,
         "fcitx5", "-d", NULL,
         "dunst", NULL,
         "kdeconnect-cli", NULL,
