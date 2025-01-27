@@ -9,7 +9,7 @@ static const int bypass_surface_visibility = 0;  /* 1 means idle inhibitors will
 static const int smartgaps                 = 0;  /* 1 means no outer gap when there is only one window */
 static int gaps                            = 1;  /* 1 means gaps between windows are added */
 static const unsigned int gappx            = 10; /* gap pixel between windows */
-static const unsigned int borderpx         = 1;  /* border pixel of windows */
+static const unsigned int borderpx         = 2;  /* border pixel of windows */
 static const unsigned int borderspx        = 0;  /* width of the border that start from outside the windows */
 static const unsigned int borderepx        = 0;  /* width of the border that start from inside the windows */
 static const unsigned int borderspx_offset = 0;  /* offset of the border that start from outside the windows */
@@ -20,7 +20,8 @@ static const float borderscolor[]          = COLOR(0x444444ff); /* color of the 
 static const float borderecolor[]          = COLOR(0x444444ff); /* color of the border that start from inside the windows */
 static const int border_color_type         = BrdOriginal; /* borders to be colored (focuscolor, urgentcolor) */
 static const int borders_only_floating     = 0;
-static const float focuscolor[]            = COLOR(0x005577ff);
+static const float focuscolor[]            = COLOR(0x53ff1a);
+//static const float focuscolor[]            = COLOR(0x005577ff);
 static const float urgentcolor[]           = COLOR(0xff0000ff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You can also use glsl colors */
@@ -33,7 +34,10 @@ static int log_level = WLR_ERROR;
 
 /* Autostart */
 static const char *const autostart[] = {
-        "/home/erik/.local/share/dwm/autostart.sh", NULL,
+        "/home/erik/.local/share/dwl/autostart.sh", NULL,
+        "fcitx5", "-d", NULL,
+        "dunst", NULL,
+        "kdeconnect-cli", NULL,
         NULL /* terminate */
 };
 
