@@ -147,6 +147,7 @@ static const char *menucmd[] = { "tofi-runer", NULL };
 static const char *wbrowser[] ={ "brave", NULL };
 static const char *screenshot[] ={ "screenshot", NULL };
 static const char *wcocr[] ={ "wcocr", NULL };
+static const char *volume[] ={ "volume", NULL };
 
 #include "shiftview.c"
 
@@ -156,6 +157,7 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_p,          spawn,          {.v = menucmd} },
 	{ MODKEY,                    XKB_KEY_w,          spawn,          {.v = wbrowser} },
 	{ MODKEY,                    XKB_KEY_s,          spawn,          {.v = screenshot} },
+	{ MODKEY,                    XKB_KEY_v,          spawn,          {.v = volume} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_S,          spawn,          {.v = wcocr} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Return,     spawn,          {.v = termcmd} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_B,          togglebar,      {0} },
