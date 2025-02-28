@@ -39,6 +39,7 @@ static const char *const autostart[] = {
         "fcitx5", "-d", NULL,
         "dunst", NULL,
         "kdeconnectd", NULL,
+        "/home/erik/.local/bin/machine-dependent/autostart_md", NULL,
         NULL /* terminate */
 };
 
